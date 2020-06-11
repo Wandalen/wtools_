@@ -2,7 +2,7 @@
 
 about :
 
-  name : 'wtools_'
+  name : 'wtools'
   description : '___'
   version : '0.4.0'
   enabled : 1
@@ -17,7 +17,7 @@ about :
   author : 'Kostiantyn Wandalen <wanalen@01.school>'
   contributors :
   - 'Kostiantyn Wandalen <wanalen@01.school>'
-  npm.name : 'wtools_'
+  npm.name : 'wtools'
   npm.scripts :
     test : 'wtest .run proto/**'
     docgen : 'wdocgen .build proto'
@@ -27,7 +27,7 @@ path :
   repository : git+https:///github.com/Wandalen/wtools_.git
   origins :
    - git+https:///github.com/Wandalen/wtools_.git
-   - npm:///wtools_
+   - npm:///wtools
   bugtracker : https:///github.com/Wandalen/wtools_/issues
 
 step :
@@ -92,4 +92,3 @@ build :
       # - build::npm
       - build::proto.export
       # - build::doc.export
-

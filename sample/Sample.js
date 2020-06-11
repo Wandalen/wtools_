@@ -1,7 +1,6 @@
 
-let _ = require( 'wtools_' );
+let _ = require( 'wtools' );
 
 /**/
 
 ___
-

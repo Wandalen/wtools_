@@ -1,5 +1,5 @@
 
-# module::wtools_ - Experimental [![Status](https://github.com/Wandalen/wtools_/workflows/Test/badge.svg)](https://github.com/Wandalen/wtools_/actions?query=workflow%3ATest)
+# module::wtools - Experimental [![Status](https://github.com/Wandalen/wtools_/workflows/Test/badge.svg)](https://github.com/Wandalen/wtools_/actions?query=workflow%3ATest)
 
 ___
 
@@ -11,6 +11,5 @@ node sample/Sample.js
 
 ## To add as submodule
 ```
-npm add 'wtools_@alpha'
+npm add 'wtools@alpha'
 ```
-

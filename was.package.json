@@ -1,6 +1,6 @@
 
 {
-  "name" : "wtools_",
+  "name" : "wtools",
   "version" : "0.2.0",
   "description" : "___",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
@@ -33,7 +33,7 @@
   {
     "wTesting" : "",
     "eslint" : "7.1.0",
-    "wtools_" : "file:."
+    "wtools" : "file:."
   },
   "keywords" :
   [
