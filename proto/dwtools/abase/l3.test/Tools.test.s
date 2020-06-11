@@ -42,7 +42,7 @@ function routinesOfTools( test )
 var Self =
 {
 
-  name : 'Tools.base.l6.path',
+  name : 'Tools.base.l3.tools',
   silencing : 1,
 
   tests :
