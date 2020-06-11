@@ -6,8 +6,8 @@ consistency:
     hash: 2c5df155feae7879d0c84615255126f2
     size: 2225
   ../.im.will.yml: &ref_1
-    hash: 4e45013404713948776700d60e887051
-    size: 4892
+    hash: 2e2f6764b6f97ab6bea98a737b239034
+    size: 4797
 module:
   wtools.out:
     about:
@@ -183,12 +183,6 @@ module:
         enabled: 0
         criterion:
           debug: 1
-      wtools:
-        path: 'hd://..'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -608,7 +602,7 @@ module:
           debug: release
       reflect.proto.debug.raw:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: debug
@@ -618,7 +612,7 @@ module:
           - files.reflect
       reflect.proto.release.raw:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: release
@@ -628,7 +622,7 @@ module:
           - files.reflect
       reflect.proto.debug.compiled:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: debug
@@ -638,7 +632,7 @@ module:
           - files.reflect
       reflect.proto.release.compiled:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: release
@@ -649,7 +643,7 @@ module:
       transpile.proto.raw:
         opts:
           entry: 'path::entry.proto.no.tests'
-          filePath: 'reflector::transpile.proto.raw*'
+          filePath: 'reflector::transpile.proto.raw'
         criterion:
           raw: raw
           debug: release
@@ -659,7 +653,7 @@ module:
       transpile.proto.no.tests.compiled.debug:
         opts:
           entry: 'path::entry.proto.*=1'
-          filePath: 'reflector::transpile.proto.no.tests.compiled*'
+          filePath: 'reflector::transpile.proto.no.tests.compiled'
         criterion:
           tests: no.tests
           raw: compiled
@@ -670,7 +664,7 @@ module:
       transpile.proto.no.tests.compiled.release:
         opts:
           entry: 'path::entry.proto.*=1'
-          filePath: 'reflector::transpile.proto.no.tests.compiled*'
+          filePath: 'reflector::transpile.proto.no.tests.compiled'
         criterion:
           tests: no.tests
           raw: compiled
@@ -682,7 +676,7 @@ module:
         opts:
           entry: 'path::entry.proto.*=1'
           external.before: '{path::out.*=1}/Main.s'
-          filePath: 'reflector::transpile.proto.only.tests.compiled*'
+          filePath: 'reflector::transpile.proto.only.tests.compiled'
         criterion:
           tests: only.tests
           raw: compiled
@@ -694,7 +688,7 @@ module:
         opts:
           entry: 'path::entry.proto.*=1'
           external.before: '{path::out.*=1}/Main.s'
-          filePath: 'reflector::transpile.proto.only.tests.compiled*'
+          filePath: 'reflector::transpile.proto.only.tests.compiled'
         criterion:
           tests: only.tests
           raw: compiled
@@ -929,12 +923,6 @@ module:
         enabled: 0
         criterion:
           debug: 1
-      wtools:
-        path: 'hd://.'
-        autoExporting: 0
-        enabled: 0
-        criterion:
-          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -1303,7 +1291,7 @@ module:
           debug: release
       reflect.proto.debug.raw:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: debug
@@ -1313,7 +1301,7 @@ module:
           - files.reflect
       reflect.proto.release.raw:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: release
@@ -1323,7 +1311,7 @@ module:
           - files.reflect
       reflect.proto.debug.compiled:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: debug
@@ -1333,7 +1321,7 @@ module:
           - files.reflect
       reflect.proto.release.compiled:
         opts:
-          filePath: 'reflector::reflect.proto*'
+          filePath: 'reflector::reflect.proto'
         criterion:
           tests: no.tests
           debug: release
@@ -1344,7 +1332,7 @@ module:
       transpile.proto.raw:
         opts:
           entry: 'path::entry.proto.no.tests'
-          filePath: 'reflector::transpile.proto.raw*'
+          filePath: 'reflector::transpile.proto.raw'
         criterion:
           raw: raw
           debug: release
@@ -1354,7 +1342,7 @@ module:
       transpile.proto.no.tests.compiled.debug:
         opts:
           entry: 'path::entry.proto.*=1'
-          filePath: 'reflector::transpile.proto.no.tests.compiled*'
+          filePath: 'reflector::transpile.proto.no.tests.compiled'
         criterion:
           tests: no.tests
           raw: compiled
@@ -1365,7 +1353,7 @@ module:
       transpile.proto.no.tests.compiled.release:
         opts:
           entry: 'path::entry.proto.*=1'
-          filePath: 'reflector::transpile.proto.no.tests.compiled*'
+          filePath: 'reflector::transpile.proto.no.tests.compiled'
         criterion:
           tests: no.tests
           raw: compiled
@@ -1377,7 +1365,7 @@ module:
         opts:
           entry: 'path::entry.proto.*=1'
           external.before: '{path::out.*=1}/Main.s'
-          filePath: 'reflector::transpile.proto.only.tests.compiled*'
+          filePath: 'reflector::transpile.proto.only.tests.compiled'
         criterion:
           tests: only.tests
           raw: compiled
@@ -1389,7 +1377,7 @@ module:
         opts:
           entry: 'path::entry.proto.*=1'
           external.before: '{path::out.*=1}/Main.s'
-          filePath: 'reflector::transpile.proto.only.tests.compiled*'
+          filePath: 'reflector::transpile.proto.only.tests.compiled'
         criterion:
           tests: only.tests
           raw: compiled
@@ -1476,5 +1464,5 @@ module:
         hash: 2c5df155feae7879d0c84615255126f2
         size: 2225
       ../.im.will.yml:
-        hash: 4e45013404713948776700d60e887051
-        size: 4892
+        hash: 2e2f6764b6f97ab6bea98a737b239034
+        size: 4797
