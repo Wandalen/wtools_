@@ -2,36 +2,47 @@ format: outwillfile-2.0
 root:
   - wtools.out
 consistency:
-  wtools.out.will.yml: &ref_0
-    hash: 333c9d99e5f01f763626e44e35c9e3ea
-    size: 36728
-  ../.ex.will.yml: &ref_1
-    hash: d0239f2359cadb0f0f955b1e03efd44e
-    size: 1650
-  ../.im.will.yml: &ref_2
-    hash: 4bd2ad8e081461ac0a9600e6aa2abea9
-    size: 4662
+  ../.ex.will.yml: &ref_0
+    hash: 2c5df155feae7879d0c84615255126f2
+    size: 2225
+  ../.im.will.yml: &ref_1
+    hash: 4e45013404713948776700d60e887051
+    size: 4892
 module:
   wtools.out:
     about:
       name: wtools
       org: noorg
-      description: ___
+      description: >-
+        Collection of general purpose tools for solving problems. Aggregates
+        module Tools. Fundamentally extend JavaScript without spoiling
+        namespace, so may be used solely or in conjunction with another module
+        of such kind. Tools contain hundreds of routines to operate effectively
+        with Array, SortedArray, Map, RegExp, Buffer, Time, String, Number,
+        Routine, Error and other fundamental types. The module provides advanced
+        tools for diagnostics and errors handling. Use it to have a stronger
+        foundation for the application.
       enabled: 1
-      version: 0.4.0
-      interpreters:
+      version: 0.3.0
+      interpreters: &ref_2
         - njs >= 8.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
+        - base
+        - basic
+        - core
+        - platform
         - tools
         - wTools
+        - wBase
+        - generic
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: wtools
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -109,7 +120,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/___
+        path: ../proto/dwtools/abase/l2/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -119,13 +130,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/abase/l2/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/abase/l2/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -155,6 +166,10 @@ module:
           - ../proto/dwtools
           - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
+          - ../proto/dwtools/abase/l2
+          - ../proto/dwtools/abase/l2/Include.s
+          - ../proto/dwtools/abase/l2.test
+          - ../proto/dwtools/abase/l2.test/Tools.test.s
           - ../proto/dwtools/amid
           - ../proto/dwtools/atop
     submodule:
@@ -168,6 +183,18 @@ module:
         enabled: 0
         criterion:
           debug: 1
+      wtools:
+        path: 'hd://..'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      wTesting:
+        path: 'npm:///wTesting'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -675,24 +702,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          filePath: 'reflector::exported.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          filePath: 'reflector::exported.files.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -769,7 +778,7 @@ module:
           - 'build::npm'
     exported:
       proto.export:
-        version: 0.4.0
+        version: 0.3.0
         recursive: 0
         withIntegrated: 2
         tar: 0
@@ -781,31 +790,30 @@ module:
           content: proto
           export: 1
     consistency:
-      wtools.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wtools
       org: noorg
-      description: ___
+      description: >-
+        Collection of general purpose tools for solving problems. Aggregates
+        module Tools. Fundamentally extend JavaScript without spoiling
+        namespace, so may be used solely or in conjunction with another module
+        of such kind. Tools contain hundreds of routines to operate effectively
+        with Array, SortedArray, Map, RegExp, Buffer, Time, String, Number,
+        Routine, Error and other fundamental types. The module provides advanced
+        tools for diagnostics and errors handling. Use it to have a stronger
+        foundation for the application.
       enabled: 1
-      version: 0.4.0
-      interpreters:
-        - njs >= 8.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - tools
-        - wTools
+      version: 0.3.0
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@01.school>
+      contributors: *ref_4
       npm.name: wtools
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -881,7 +889,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/___
+        path: proto/dwtools/abase/l2/Include.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -891,13 +899,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/abase/l2/Include.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/abase/l2/Include.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -921,6 +929,18 @@ module:
         enabled: 0
         criterion:
           debug: 1
+      wtools:
+        path: 'hd://.'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      wTesting:
+        path: 'npm:///wTesting'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -1453,11 +1473,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: d0239f2359cadb0f0f955b1e03efd44e
-        size: 1650
+        hash: 2c5df155feae7879d0c84615255126f2
+        size: 2225
       ../.im.will.yml:
-        hash: 4bd2ad8e081461ac0a9600e6aa2abea9
-        size: 4662
-      wtools.out.will.yml:
-        hash: 333c9d99e5f01f763626e44e35c9e3ea
-        size: 36728
+        hash: 4e45013404713948776700d60e887051
+        size: 4892
