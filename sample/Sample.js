@@ -1,4 +1,4 @@
-let _ = require( 'wtools' );
+let _ = require( 'wTools' );
 
 var src = [ 0, [ 0, 1 ], [ 4, 4, 4, 0, [ 0, 9 ] ] ];
 var r = _.arrayFlattenOnce( null, src );

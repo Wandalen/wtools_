@@ -10,11 +10,6 @@ submodule :
     enabled : 0 # submodule
     criterion :
       debug : 1
-  wtools :
-    path : hd://.
-    enabled : 0 # submodule
-    criterion :
-      development : 1
   wTesting :
     path : npm:///wTesting
     enabled : 0 # submodule

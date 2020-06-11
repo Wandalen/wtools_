@@ -13,7 +13,7 @@
     "url" : "https://github.com/Wandalen/wtools_/issues"
   },
   "dependencies" : { "wTools" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0", "wtools" : "file:." },
+  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0" },
   "keywords" :
   [
     "base",
