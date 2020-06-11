@@ -10,7 +10,7 @@ submodule :
     enabled : 0 # submodule
     criterion :
       debug : 1
-  wTools :
+  wtools :
     path : hd://.
     enabled : 0 # submodule
     criterion :
@@ -234,4 +234,3 @@ build :
       - build::raw.release
       - build::release
       - build::npm
-
