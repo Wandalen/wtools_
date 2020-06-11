@@ -1,6 +1,6 @@
 {
   "name" : "wtools",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "description" : "___",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
@@ -12,7 +12,7 @@
   {
     "url" : "https://github.com/Wandalen/wtools_/issues"
   },
-  "dependencies" : { "wTools" : "alpha" },
-  "devDependencies" : { "eslint" : "7.1.0", "wtools" : "file:.", "wTesting" : "alpha" },
+  "dependencies" : { "wTools" : "latest" },
+  "devDependencies" : { "eslint" : "7.1.0", "wtools" : "file:.", "wTesting" : "latest" },
   "keywords" : [ "wTools" ]
 }
