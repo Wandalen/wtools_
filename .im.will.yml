@@ -51,7 +51,7 @@ path :
       content : prime
 
   entry.proto.no.tests :
-    path : proto/dwtools/abase/l2/Include.s
+    path : proto/wtools/abase/l2/Include.s
     criterion :
       tests : 'no.tests'
   entry.proto.only.tests :
@@ -60,7 +60,7 @@ path :
       tests : 'only.tests'
 
   entry.out.raw.debug :
-    path : '{path::out.*=1}/source/dwtools/abase/l2/Include.s'
+    path : '{path::out.*=1}/source/wtools/abase/l2/Include.s'
     criterion :
       debug : [ debug, release ]
       raw : raw
