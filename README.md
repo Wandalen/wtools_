@@ -6,7 +6,7 @@ Collection of general purpose tools for solving problems. Aggregates module Tool
 ## Try out
 ```
 npm install
-node sample/Sample.js
+node sample/Sample.s
 ```
 
 ## To add
