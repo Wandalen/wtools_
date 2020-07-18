@@ -42,7 +42,7 @@ function routinesOfTools( test )
 let Self =
 {
 
-  name : 'Tools.base.l2.tools',
+  name : 'Tools.l2.tools',
   silencing : 1,
 
   tests :
