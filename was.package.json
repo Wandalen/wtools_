@@ -6,7 +6,7 @@
   "license" : "MIT",
   "main" : "proto/wtools/abase/l2/Include.s",
   "files" : [ "proto/wtools/abase/l2/Include.s", "proto/wtools/Tools.s" ],
-  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
+  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
   "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wtools_.git" },
   "bugs" :
   {
