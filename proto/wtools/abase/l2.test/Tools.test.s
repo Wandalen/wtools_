@@ -23,16 +23,16 @@ let _ = _global_.wTools;
 function routinesOfTools( test )
 {
   test.case = 'routines _.array*';
-  test.is( _.routineIs( _.arrayIs ) );
-  test.is( _.routineIs( _.arrayRemove ) );
+  test.true( _.routineIs( _.arrayIs ) );
+  test.true( _.routineIs( _.arrayRemove ) );
 
   test.case = 'routines _.map*';
-  test.is( _.routineIs( _.mapIs ) );
-  test.is( _.routineIs( _.mapExtend ) );
+  test.true( _.routineIs( _.mapIs ) );
+  test.true( _.routineIs( _.mapExtend ) );
 
   test.case = 'routines _.str*';
-  test.is( _.routineIs( _.mapIs ) );
-  test.is( _.routineIs( _.mapExtend ) );
+  test.true( _.routineIs( _.mapIs ) );
+  test.true( _.routineIs( _.mapExtend ) );
 }
 
 // --
