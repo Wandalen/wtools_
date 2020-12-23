@@ -1,4 +1,5 @@
-( function _Tools_test_s_() {
+( function _Tools_test_s_()
+{
 
 'use strict';
 
