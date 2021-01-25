@@ -8,7 +8,7 @@ Collection of general purpose tools for solving problems. Aggregates module Tool
 git clone https://github.com/Wandalen/wtools
 cd wtools
 npm install
-node sample/Sample.s
+node sample/trivial/Sample.s
 ```
 
 ## To add to your project
