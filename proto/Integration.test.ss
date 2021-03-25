@@ -104,7 +104,7 @@ function production( test )
   if( !version )
   throw _.err( 'Cannot obtain version to install' );
 
-  let structure = { dependencies : { [ mdl.name + '2' ] : version } };
+  let structure = { dependencies : { [ mdl.name ] : version } };
   a.fileProvider.fileWrite({ filePath : a.abs( 'package.json' ), data : structure, encoding : 'json' });
   let data = a.fileProvider.fileRead({ filePath : a.abs( 'package.json' ) });
   console.log( data );
