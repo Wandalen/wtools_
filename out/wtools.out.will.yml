@@ -76,6 +76,7 @@ module:
       download:
         criterion:
           predefined: 1
+        path: ../
       repository:
         path: 'git+https:///github.com/Wandalen/wtools_.git'
       origins:
@@ -872,6 +873,7 @@ module:
       download:
         criterion:
           predefined: 1
+        path: ./
       repository:
         path: 'git+https:///github.com/Wandalen/wtools_.git'
       origins:
