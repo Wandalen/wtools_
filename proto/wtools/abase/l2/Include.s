@@ -11,7 +11,7 @@
 
 if( typeof module !== 'undefined' && module !== null )
 {
-  const _ = require( '../../Tools.s' );
+  const _ = require( 'Tools' );
 }
 
 const _global = _global_;
