@@ -29,11 +29,11 @@ function routinesOfTools( test )
 
   test.case = 'routines _.map*';
   test.true( _.routineIs( _.mapIs ) );
-  test.true( _.routineIs( _.mapExtend ) );
+  test.true( _.routineIs( _.props.extend ) );
 
   test.case = 'routines _.str*';
   test.true( _.routineIs( _.mapIs ) );
-  test.true( _.routineIs( _.mapExtend ) );
+  test.true( _.routineIs( _.props.extend ) );
 }
 
 // --
