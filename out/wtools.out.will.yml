@@ -2,12 +2,9 @@ format: outwillfile-2.0
 root:
   - wtools.out
 consistency:
-  ../.ex.will.yml: &ref_0
-    hash: 1031146476aa97a1486b4b3793e05d8a
-    size: 2226
-  ../.im.will.yml: &ref_1
-    hash: bb7df68399fb14ed3bdf27a48d71b8b7
-    size: 4807
+  ../will.yml: &ref_0
+    hash: 958e69b1f661243e5248c09a84c5f44f
+    size: 6837
 module:
   wtools.out:
     about:
@@ -24,11 +21,10 @@ module:
         foundation for the application.
       enabled: 1
       version: 0.3.0
-      interpreters: &ref_2
-        - njs >= 10.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords: &ref_3
+      license: MIT
+      npm.name: wtools
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: &ref_1
         - base
         - basic
         - core
@@ -37,12 +33,13 @@ module:
         - wTools
         - wBase
         - generic
-      license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
+      contributors: &ref_2
         - Kostiantyn Wandalen <wanalen@01.school>
-      npm.name: wtools
-      npm.scripts: &ref_5
+      interpreters: &ref_3
+        - njs >= 10.0.0
+        - chrome >= 60.0.0
+        - firefox >= 60.0.0
+      npm.scripts: &ref_4
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -57,15 +54,11 @@ module:
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.in:
         criterion:
           predefined: 1
@@ -189,7 +182,7 @@ module:
         autoExporting: 0
         enabled: 0
         criterion:
-          debug: 1
+          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -791,8 +784,7 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      ../will.yml: *ref_0
   ../:
     about:
       name: wtools
@@ -808,26 +800,22 @@ module:
         foundation for the application.
       enabled: 1
       version: 0.3.0
-      interpreters: *ref_2
-      keywords: *ref_3
       license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
       npm.name: wtools
-      npm.scripts: *ref_5
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: *ref_1
+      contributors: *ref_2
+      interpreters: *ref_3
+      npm.scripts: *ref_4
     path:
       module.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
@@ -934,7 +922,7 @@ module:
         autoExporting: 0
         enabled: 0
         criterion:
-          debug: 1
+          development: 1
       wTesting:
         path: 'npm:///wTesting'
         autoExporting: 0
@@ -1472,9 +1460,6 @@ module:
           - 'build::release'
           - 'build::npm'
     consistency:
-      ../.ex.will.yml:
-        hash: 1031146476aa97a1486b4b3793e05d8a
-        size: 2226
-      ../.im.will.yml:
-        hash: bb7df68399fb14ed3bdf27a48d71b8b7
-        size: 4807
+      ../will.yml:
+        hash: 958e69b1f661243e5248c09a84c5f44f
+        size: 6837
