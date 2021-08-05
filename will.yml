@@ -9,7 +9,7 @@ about:
     fundamental types. The module provides advanced tools for diagnostics and
     errors handling. Use it to have a stronger foundation for the application.
   version: 0.3.0
-  enabled: 1
+  enabled: 0
   license: MIT
   npm.name: wtools
   author: Kostiantyn Wandalen <wanalen@01.school>
